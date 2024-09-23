@@ -6,19 +6,17 @@
 /*   By: bphuyal <bphuyal@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/22 10:58:37 by bphuyal           #+#    #+#             */
-/*   Updated: 2024/09/22 20:41:59 by bphuyal          ###   ########.fr       */
+/*   Updated: 2024/09/23 12:52:04 by bphuyal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-int	ft_ultimate_ft(int *********nbr)
+void	ft_ultimate_ft(int *********nbr)
 {
-	int 	********nbr = 42;
-	
+	*********nbr = 42;
 }
-
-
+/*
 int	main(void)
 {
 	int nbr;
@@ -36,3 +34,4 @@ int	main(void)
 	printf("%d", nbr);
 	return (0);
 }
+*/

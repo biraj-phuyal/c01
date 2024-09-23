@@ -6,7 +6,7 @@
 /*   By: bphuyal <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/23 10:37:54 by bphuyal           #+#    #+#             */
-/*   Updated: 2024/09/23 10:48:54 by bphuyal          ###   ########.fr       */
+/*   Updated: 2024/09/23 12:13:33 by bphuyal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,18 +14,23 @@
 
 void	ft_div_mod(int a, int b, int *div, int *mod)
 {
-	int r;
-	int m;
-	int *div = &r;
-	int *mod = &m;
+	*div = a / b;
+	*mod = a % b;
 }
-
+/*
 int main()
 {
-	int a = 4;
-	int b = 3;
-	int *r = a / b;
-	int *m = a % b;
-	ft_div_mod(a, b, r, m);
+	int a;
+	int b;
+	int div;
+	int mod;
+
+	a = 10;
+	b = 3;
+	ft_div_mod(a, b, &div, &mod);
+	printf("%d\n", div);
+	printf("%d\n", mod);
+
 
 }
+*/
