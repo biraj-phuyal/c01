@@ -6,7 +6,7 @@
 /*   By: bphuyal <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/23 20:28:05 by bphuyal           #+#    #+#             */
-/*   Updated: 2024/09/25 10:42:32 by bphuyal          ###   ########.fr       */
+/*   Updated: 2024/09/25 13:01:25 by bphuyal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,18 +15,19 @@
 
 void	ft_putstr(char *str)
 {
-	int i = 0;
+	int	i;
 
-	while(str[i] != '\0')
+	i = 0;
+	while (str[i] != '\0')
 	{
 		write(1, &str[i], 1);
-
 		i++;
 	}
 }
-
+/*
 int	main()
 {
 	char str[] = "dog";
 	ft_putstr(str);
 }
+*/
