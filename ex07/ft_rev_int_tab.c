@@ -1,34 +1,48 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_div_mod.c                                       :+:      :+:    :+:   */
+/*   ft_rev_int_tab.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bphuyal <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/23 10:37:54 by bphuyal           #+#    #+#             */
-/*   Updated: 2024/09/27 12:25:46 by bphuyal          ###   ########.fr       */
+/*   Created: 2024/09/25 10:59:53 by bphuyal           #+#    #+#             */
+/*   Updated: 2024/09/25 21:38:14 by bphuyal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-void	ft_div_mod(int a, int b, int *div, int *mod)
+void	ft_rev_int_tab(int *tab, int size)
 {
-	*div = a / b;
-	*mod = a % b;
+	int	temp;
+
+	int	i = 0;
+
+	while (i > size / 2)
+	{
+		tab[i] = temp;
+		tab[i] = (size -1 -i);
+		tab[size -1 -i] = temp;
+		i++;
+	}
 }
-/*
+
 int main()
 {
-	int a;
-	int b;
-	int div;
-	int mod;
+	int a[4];
 
-	a = 10;
-	b = 3;
-	ft_div_mod(a, b, &div, &mod);
-	printf("%d\n", div);
-	printf("%d\n", mod);
+	a[0] = 4;
+	a[1] = 3;
+	a[2] = 2;
+	a[3] = 1;
+	int b = &a;
+	ft_rev_int_tab(a, 4);
+	printf("%d", b);
 }
+/*
+int i = 0;
+	while (i < size)
+	{
+		printf("%d", a);
+	}
 */

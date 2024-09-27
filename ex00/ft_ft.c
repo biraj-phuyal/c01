@@ -6,7 +6,7 @@
 /*   By: bphuyal <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/20 21:58:17 by bphuyal           #+#    #+#             */
-/*   Updated: 2024/09/23 12:27:29 by bphuyal          ###   ########.fr       */
+/*   Updated: 2024/09/25 18:09:06 by bphuyal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,9 +19,10 @@ void	ft_ft(int *nbr)
 /*
 int main() 
 {
-	int num;
+	int num = 2;
+	printf("%d\n", num)
 	ft_ft(&num);
-	printf("%d", num);
+	printf("%d\n", num);
 	return 0;
 }
 */

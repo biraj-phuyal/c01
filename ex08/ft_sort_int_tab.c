@@ -1,34 +1,53 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_div_mod.c                                       :+:      :+:    :+:   */
+/*   ft_sort_int_tab.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bphuyal <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/23 10:37:54 by bphuyal           #+#    #+#             */
-/*   Updated: 2024/09/27 12:25:46 by bphuyal          ###   ########.fr       */
+/*   Created: 2024/09/25 22:10:35 by bphuyal           #+#    #+#             */
+/*   Updated: 2024/09/26 11:31:14 by bphuyal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-void	ft_div_mod(int a, int b, int *div, int *mod)
-{
-	*div = a / b;
-	*mod = a % b;
-}
-/*
-int main()
+void	ft_sort_int_tab(int *tab, int size)
 {
 	int a;
-	int b;
-	int div;
-	int mod;
+	
+	int temp;
 
-	a = 10;
-	b = 3;
-	ft_div_mod(a, b, &div, &mod);
-	printf("%d\n", div);
-	printf("%d\n", mod);
+	int i;
+	
+	i = 0;
+	a = 0;
+	while (a == 0)
+	{
+		if (a < size -1)
+		++a;
+		while(i == 0)
+		{
+			if (i < size - a -1)
+			++i;
+
+				if (tab[i] > tab[i + 1])
+
+					temp = tab[i + 1];
+					tab[i] = temp;
+		}
+
+	}
 }
-*/
+
+int main()
+{
+        int a[4];
+
+        a[0] = 4;
+        a[1] = 3;
+        a[2] = 2;
+        a[3] = 1;
+        ft_rev_int_tab(a, 4);
+}
+
